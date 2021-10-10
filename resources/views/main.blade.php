@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <title>BreezyCV - Resume / CV / vCard Template</title>
+    <title>Hamza TAOUGAR - Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="BreezyCV - Resume / CV / vCard Template" />
+    <meta name="description" content="Hamza TAOUGAR - Portfolio" />
     <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Material CV, portfolio" />
-    <meta name="author" content="lmpixels" />
+    <meta name="author" content="hamza taougar" />
     <link rel="shortcut icon" href="favicon.ico">
 
 
@@ -61,8 +61,6 @@
     <script src="{{ asset('js/owl.carousel.min.js')}}"></script>
     <script src="{{ asset('js/jquery.magnific-popup.min.js ')}}"></script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrDf32aQTCVENBhFJbMBKOUTiUAABtC2o"></script>
-    <script src="{{ asset('js/jquery.googlemap.js')}}"></script>
     <script src="{{ asset('js/validator.js')}}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
   </body>

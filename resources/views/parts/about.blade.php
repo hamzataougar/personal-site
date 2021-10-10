@@ -24,10 +24,10 @@
                             <span class="value">{{$profile->residence}}</span>
                           </li>
 
-                          <li>
+                          {{-- <li>
                             <span class="title">Address</span>
                             <span class="value">{{$profile->address}}</span>
-                          </li>
+                          </li> --}}
 
                           <li>
                             <span class="title">E-mail</span>
@@ -112,7 +112,7 @@
                   </div>
                   <!-- End of Clients -->
 
-                  <div class="white-space-50"></div>
+                  {{-- <div class="white-space-50"></div> --}}
 
                   {{-- <!-- Pricing -->
                   <div class="row">
@@ -177,10 +177,10 @@
                   </div>
                   <!-- End of Pricing --> --}}
 
-                  <div class="white-space-50"></div>
+                  {{-- <div class="white-space-50"></div> --}}
 
                   <!-- Fun Facts -->
-                  <div class="row">
+                  {{-- <div class="row">
                     <div class="col-xs-12 col-sm-12">
 
                       <div class="block-title">
@@ -216,7 +216,7 @@
                         <span class="fun-fact-block-text"></span>
                       </div>
                     </div>
-                  </div>
+                  </div> --}}
                   <!-- End of Fun Facts -->
 
                 </div>

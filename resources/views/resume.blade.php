@@ -63,30 +63,27 @@
         <div class="col-xs-12 col-sm-5">
           
             <div class="white-space-10"></div>
-            @foreach ($skills as $key=>$skill)
                  <!-- Coding Skills -->
                 <div class="block-title">
-                    <h3>{{$key}} <span>Skills</span></h3>
+                    <h3><span>Skills</span></h3>
                 </div>
                 <div class="skills-info skills-second-style">
+                    @foreach ($skills as $key=>$skill)
                     <!-- Skill 5 -->
-                    <div class="skill clearfix">
-                        <h4>{{$skill['name']}}</h4>
-                        <div class="skill-value">{{$skill['percentage']}}%</div>
-                    </div>
-                    <div class="skill-container skill-5">
-                        <div class="skill-percentage"></div>
-                    </div>
-                    <!-- End of Skill 5 -->
+                        <div class="skill clearfix">
+                            <h4>{{$skill['name']}}</h4>
+                            <div class="skill-value">{{$skill['percentage']}}%</div>
+                        </div>
+                        <div class="skill-container skill-5">
+                            <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 5 -->
+                    @endforeach
                 </div>
                     <!-- End of Coding Skills -->
-    
-            @endforeach
-           
-         
 
+            @if (count($capacities) > 0)
             <div class="white-space-10"></div>
-            @if (!empty($capacities))
                 <!-- Knowledges -->
                 <div class="block-title">
                 <h3>Knowledges</h3>
@@ -103,8 +100,9 @@
         <!-- End of Skills & Certificates -->
         </div>
 
+       
+        @if (count($certifications) > 0)
         <div class="white-space-50"></div>
-        @if (!empty($certifications))
             <div class="row">
                     <div class="col-xs-12 col-sm-12">
                         <div class="block-title">

@@ -12,7 +12,7 @@
                 </div>
                 
                 <div class="item">
-                    <div class="sp-subtitle">Frontend-developer</div>
+                    <div class="sp-subtitle">{{$profile->second_job}}</div>
                 </div>
                 </div>
             </div>

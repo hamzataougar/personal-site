@@ -28,26 +28,17 @@ class ProfileController extends Controller
     {
         $skills_final = [];
         $profile = Profile::latest()->first();
-        $etudes = Etude::all();
-        $experiences = Experience::all();
-        $skills_field = Skill::select('field')->distinct()->get();
-        $capacities = Capacity::all();
+        $etudes = Etude::latest()->take(6)->get();
+        $experiences = Experience::latest()->take(6)->get();
+        $capacities = Capacity::latest()->take(6)->get();
         $certifications = Certification::all();
         $projects = Website::all();
         $categories_pojects = Website::distinct()->get(['category']);
         $posts = Post::paginate(8);
-        $clients = Customer::latest()->take(5)->get();
-        $testimonials = Testimonial::all();
-        $services = Service::all();
-        foreach($skills_field as $field){
-           // dd($field->field); 
-            $skills = DB::table('skills')->where('field', $field->field)->get();
-            foreach($skills as $skill){
-                $skills_final[$field->field]['name'] =  $skill->name;
-                $skills_final[$field->field]['percentage'] =  $skill->percentage;
-            }
-        }
-       //dd(  $skills_final); 
+        $clients = Customer::latest()->take(10)->get();
+        $testimonials = Testimonial::latest()->take(6)->get();
+        $services = Service::latest()->take(6)->get();
+        $skills_final = Skill::latest()->take(6)->get();
         return view('main',['services'=>$services,'testimonials'=>$testimonials,'clients'=>$clients,'posts'=> $posts,'categories'=>$categories_pojects,'profile' => $profile,'etudes' => $etudes,'experiences' => $experiences,'skills' => $skills_final,'capacities' => $capacities,'certifications'=>$certifications,'projects'=>$projects]);
     }
 

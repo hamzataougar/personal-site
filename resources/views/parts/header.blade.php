@@ -50,9 +50,9 @@
 
     <div class="social-links">
       <ul>
-      <li><a href="{{$profile->github_account}}" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-        <li><a href="{{$profile->github_account}}" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href="{{$profile->github_account}}" target="_blank"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="{{$profile->linkedin_account}}" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="{{$profile->github_account}}" target="_blank"><i class="fab fab fa-github"></i></a></li>
+        <li><a href="{{$profile->twitter_account}}" target="_blank"><i class="fab fa-twitter"></i></a></li>
       </ul>
     </div>
 

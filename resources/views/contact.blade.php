@@ -43,7 +43,7 @@
 
     <!-- Contact Form -->
     <div class="col-xs-12 col-sm-8">
-        <div id="map" class="map"></div>
+        <div id="map" class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108702.95033122877!2d-8.077892958450938!3d31.6347484911145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2sMarrakech!5e0!3m2!1sfr!2sma!4v1633902334223!5m2!1sfr!2sma" width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
         <div class="block-title">
             <h3>How Can I <span>Help You?</span></h3>
         </div>
